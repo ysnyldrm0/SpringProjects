@@ -43,8 +43,8 @@ public class BootStrapData implements CommandLineRunner {
 
 
 
-        Publisher BeyazKalem = new Publisher("Beyaz Kalem","Yeni Bati Mahallesi Yenimahalle,Ankara,Turkey,06370");
-        publisherRepository.save(BeyazKalem);
+        Publisher okyanus = new Publisher("Okyanus","Yeni Bati Mahallesi,2386.Cadde,A-13","Ankara","Turkey","06370");
+        publisherRepository.save(okyanus);
 
         System.out.println("Started in Bootstrap");
         System.out.println("Number of Books: " + bookRepository.count());

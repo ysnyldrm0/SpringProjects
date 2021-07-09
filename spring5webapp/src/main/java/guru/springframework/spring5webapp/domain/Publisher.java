@@ -9,11 +9,17 @@ public class Publisher {
     private Long id;
 
     private String name;
-    private String address;
+    private String addressLine1;
+    private String city;
+    private String state;
+    private String zip;
 
-    public Publisher(String name, String address) {
+    public Publisher(String name, String addressLine1, String city, String state, String zip) {
         this.name = name;
-        this.address = address;
+        this.addressLine1 = addressLine1;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
     }
 
     public Publisher() {
@@ -28,12 +34,12 @@ public class Publisher {
         this.name = name;
     }
 
-    public String getAddress() {
-        return address;
+    public String getAddressLine1() {
+        return addressLine1;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setAddressLine1(String address) {
+        this.addressLine1 = address;
     }
 
     public Long getId() {
